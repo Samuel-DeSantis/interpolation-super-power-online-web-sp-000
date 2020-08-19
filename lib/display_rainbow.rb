@@ -1,6 +1,7 @@
 def display_rainbow(array)
   items = []
-  array.each_char { |i| items.push("#{array[i][0].upcase}: #{array[0]},")}
+  array.each { |i| items.push("#{array[i][0].upcase}: #{array[i]},")}
   items.pop()
+  array.each
   puts items
 end
